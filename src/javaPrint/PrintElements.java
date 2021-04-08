@@ -6,6 +6,7 @@ public class PrintElements
 	private String nationality;
 	private String dream;
 	
+	//Function to print the text containing Name, Nationality and Dream
 	public void printElements(String name, String nationality, String dream)
 	{
 		String message  = "		Name: " + name + "\n";

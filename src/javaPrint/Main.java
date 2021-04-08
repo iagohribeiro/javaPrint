@@ -19,17 +19,22 @@ public class Main {
 							+ "you will get a result like the one below.\n"
 							+ "	Ëxample: ";
 		System.out.println(helloMessage);
+
+		//Function to print the elements (Name, Nationality and Dream)
 		message.printElements(message.getName(), message.getNationality(), message.getDream());
 	}
 
 	public static void main(String[] args)
 	{
+		//Information and example for the user
 		header();
+
 		//To get User input
 		Scanner input = new Scanner(System.in);
 
 		try
 		{
+			//Input from User
 			System.out.println("----------------- Your data -----------------");
 			System.out.println("Name: ");
 			message.setName(input.nextLine());
@@ -37,6 +42,8 @@ public class Main {
 			message.setNationality(input.nextLine());
 			System.out.println("Biggest Dream: ");
 			message.setDream(input.nextLine());
+
+			//Function to print the elements (Name, Nationality and Dream)
 			message.printElements(message.getName(), message.getNationality(), message.getDream());
 		}
 		catch (java.util.InputMismatchException e)
